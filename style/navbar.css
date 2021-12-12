@@ -23,8 +23,8 @@ body {
 }
 
 .left div:nth-child(1) {
-  height: 38px;
-  width: 40%;
+  height: 35px;
+  width: 45%;
   /* border: 1px solid white; */
 }
 
@@ -33,13 +33,13 @@ body {
   width: 60%;
   margin-left: 8%;
   /* border: 1px solid white; */
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .left img {
   width: 100%;
   height: 100%;
-  padding-top: 9%;
+  padding-top: 12%;
 }
 
 .right {
@@ -52,14 +52,12 @@ body {
 }
 
 .right > div {
-  /* border: 1px solid white; */
-  /* text-align: right; */
   width: 30%;
   color: white;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  padding-top: 4%;
+  padding-top: 5%;
 }
 
 .right > div:hover {
@@ -82,7 +80,6 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  /* border: 1px solid red; */
 }
 
 .dropdown-content {
@@ -90,21 +87,14 @@ body {
   font-size: 14px;
   position: absolute;
   background-color: white;
-  min-width: 310px;
-  min-height: 380px;
-  /* width: 410px;
-  height: 400px; */
-  /* z-index: 1; */
-  /* border: 1px solid red; */
-
+  min-width: 340px;
+  min-height: 360px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
-.dropdown-content i {
-  margin-right: 2%;
-}
+
 .dropdown-content a {
   color: black;
   padding: 10px 12px;

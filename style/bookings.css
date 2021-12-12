@@ -1,9 +1,8 @@
 .bookings {
   height: 485px;
   width: 100%;
-  border: 1px solid red;
-  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
-  background-repeat: no-repeat;
-  position: absolute;
-  /* background-size: cover; */
+  /* border: 1px solid red; */
+  background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: cover;
+  background-position: center;
 }
