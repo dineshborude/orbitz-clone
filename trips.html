@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+
+        body {
+            background-color: #EEEEEE;
+
+        }
+
+        .top_margin {
+            margin-top: 20px;
+        }
+
+        /* navbar */
+
+        .navbar {
+            display: flex;
+            background-color: #0e112c;
+            padding: 12px 5%;
+
+        }
+
+        .left-list {
+            width: 60%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .left-list li,
+        .right-nav li {
+            list-style: none;
+            /*     
+    border: 1px solid black; */
+            padding: 10px 13px;
+        }
+
+        .left-list li {
+            margin-left: 5%;
+        }
+
+        .left-list li a,
+        .right-nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #0fa9f0;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #main_container {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid red; */
+
+        }
+
+        /* null cart */
+        #trips_div {
+            max-width: 600px;
+            height: 500px;
+            border: 2px solid seagreen;
+            margin: 40px auto;
+            text-align: center;
+            padding-top: 5%;
+
+        }
+
+        #explore {
+            width: 100%;
+            padding: 10px 0px;
+            margin-top: 40px;
+            background-color: #df346d;
+            cursor: pointer;
+            color: white;
+            font-size: 17px;
+        }
+
+        /* full cart  */
+
+        .hotel_div {
+            width: 80%;
+            height: 180px;
+            margin: 10px auto;
+           
+            display: grid;
+            grid-template-columns: repeat(3, 32%);
+            grid-template-rows: 100%;
+            gap: 10px;
+        }
+
+       
+
+        .hotel_div div:nth-child(2) {
+            grid-area: 1/2/2/4;
+        }
+
+        .hotel_items img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hotel_info_items{
+            display: inline-block;
+            vertical-align: top;
+          
+            height: 100%;
+            position: relative;
+        }
+
+      
+        #hotel_info div:nth-child(1){
+            width: 50%;
+        }
+        #hotel_info div:nth-child(2){
+            margin-left: 30%;
+            
+            width: 20%;
+        }
+
+        .position_abs{
+            padding: 100% 1% 0% 30%;
+        }
+
+        .hotel_items p{
+            color: rgb(75, 74, 74);
+            font-size: 13px;
+            margin: 7px;
+            font-weight: 600;
+        }
+        h1, h2, h3, h4{
+            color: rgb(75, 74, 74); 
+        }
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+        /* <!-- download orbitz app --> */
+
+        #download {
+            /* margin-top: 50px;
+            margin-bottom: 50px; */
+            margin: 50px auto;
+            display: grid;
+            width: 90%;
+            height: 370px;
+            background-color: white;
+            grid-template-columns: 35% 32% 32%;
+            grid-template-rows: 370px;
+        }
+
+        #download div:nth-child(2) {
+            grid-area: 1/2/2/4;
+            padding: 4% 3%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+        }
+
+        .app_items {
+            /* border: 1px solid red; */
+            position: relative;
+        }
+
+        .download_items img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .big_font {
+            font-size: 27px;
+            font-weight: 600;
+        }
+
+        .add_margin {
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+
+        #phone {
+            width: 80%;
+            height: 50px;
+            padding: 2% 4%;
+            letter-spacing: 1px;
+            outline: none;
+        }
+
+        .mobile {
+            display: inline-block;
+            width: 45%;
+            /* padding: 10px 20px; */
+        }
+
+        #last_btn {
+            width: 70%;
+            height: 50px;
+            background-color: #df346d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .scan img {
+            width: 80%;
+            height: 150px;
+            position: absolute;
+            /* background-color: yellow; */
+        }
+
+
+        /* footer started */
+
+        a {
+            text-decoration: none;
+            color: #31b5f3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            display: flex;
+            width: 90%;
+            height: 300px;
+            margin: 30px auto;
+            padding-bottom: 20px;
+            /* border: 1px solid black; */
+            justify-content: space-between;
+            padding-right: 1%;
+        }
+
+        .footer_item li {
+            list-style: none;
+            margin-top: 10px;
+            font-size: 13px;
+
+        }
+
+        .footer_item>div {
+            font-weight: 600;
+        }
+
+        .text_center {
+            text-align: center;
+        }
+
+        .small_font {
+            font-size: 14px;
+            color: rgb(75, 74, 74);
+        }
+
+        .small_text {
+            font-size: 13px;
+        }
+
+        .empty_div {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <ul class="left-list">
+            <div class="logo"><img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+                    alt="Logo"></div>
+            <li> <a href="">More travel</a></li>
+        </ul>
+
+
+        <ul class="right-nav">
+            <li><a href="">Espanol</a> </li>
+            <li> <a href="">List your property</a></li>
+            <li> <a href="">Support</a></li>
+            <li> <a href="trips.html">trips</a></li>
+            <li> <a href="signin.html">Sign in</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="main_container">
+
+    </div>
+
+
+    <!-- download orbitz app -->
+
+    <div id="download">
+        <div class="download_items">
+            <img src="https://thumbnails.trvl-media.com/CSYM6eB9q4W5M2gqyZNY_NfDEFQ=/a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg"
+                alt="">
+        </div>
+        <div class="download_items">
+            <div class="app_items">
+                <div class="big_font">Rewards are waiting for you in the Orbitz app</div>
+                <ul>
+                    <li class="small_font add_margin">Earn 4% back when you book your hotel in app, vs. 3% on site
+                    </li>
+                    <li class="small_font add_margin">Get flight status and gate number notifications</li>
+                    <li class="small_font add_margin">Have questions about your stay? Message your hotel right in
+                        the app</li>
+                </ul>
+
+
+                <h3 class="top_margin">Text yourself a download link</h3>
+                <div class="mobile top_margin">
+                    <input type="text" id="phone" placeholder="Phone number">
+                </div>
+                <div class="mobile top_margin">
+                    <button id="last_btn" onclick="get_app()">Get the app</button>
+                </div>
+                <p class="small_font">By providing your number, you agree to receive a one-time automated text
+                    message
+                    with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div class="app_items scan">
+                <div><img src="https://i.ibb.co/XttKbTC/70201.jpg" alt=""></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer started -->
+
+    <footer>
+        <div class="footer_item">
+            <div><img
+                    src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+                    alt=""></div>
+        </div>
+        <div class="footer_item">
+            <div>Company</div>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">List your property</a></li>
+                <li><a href="">Partnerships</a></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Orbitz Rewards</a></li>
+                <li><a href="">Advertising</a></li>
+            </ul>
+
+        </div>
+        <div class="footer_item">
+            <div>Explore</div>
+            <ul>
+                <li><a href=""> Hotels in United States</a></li>
+                <li><a href=""> Vacation Rentals in United States</a></li>
+                <li><a href=""> Car Rentals in United States</a></li>
+                <li><a href="">Domestic Flights</a></li>
+                <li><a href=""> Vacation Packages in United States</a></li>
+                <li><a href="">Orbitz Reviews</a></li>
+                <li><a href="">Orbitz Coupons</a></li>
+                <li><a href="">LGBTQ Travel</a></li>
+                <li><a href="">Unique Accommodations</a></li>
+                <li><a href="">Travel Blog</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_item">
+            <div>Policies</div>
+            <ul>
+                <li><a href=""> Privacy Policy</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href=""> Orbitz Rewards Terms</a></li>
+                <li><a href=""> Do not sell my personal information</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_item">
+            <div>Help</div>
+            <ul>
+                <li><a href=""> Support</a></li>
+                <li><a href="">Cancel your hotel or vacation rental <br> booking</a></li>
+                <li><a href="">Cancel your flight</a></li>
+                <li><a href=""> Refund timelines, policies & processes</a></li>
+                <li><a href="">Use an Orbitz Coupon</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <hr>
+
+    <p class="text_center top_margin small_font">© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+    </p>
+    <p class="text_center small_font">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+        trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+
+    <!-- end of main body  -->
+
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    let bookedRooms = (JSON.parse(localStorage.getItem("bookedRooms")));
+
+    if (bookedRooms.length == 0) {
+        null_cart()
+    } else {
+        full_cart(bookedRooms);
+    }
+
+    function null_cart() {
+        let main_cont = document.getElementById("main_container");
+
+        let trips_div = document.createElement("div");
+
+        trips_div.setAttribute("id", "trips_div")
+
+        let heading = document.createElement("h1");
+
+        heading.textContent = "Trips"
+
+        let img_div = document.createElement("div");
+
+        let img = document.createElement("img");
+
+        img.src = "https://a.travel-assets.com/egds/illustrations/uds-default/baggage__large.svg";
+
+        img_div.append(img);
+
+        let users = JSON.parse(localStorage.getItem("users"));
+        console.log((users));
+
+        let trips_info = document.createElement("h3");
+
+        trips_info.textContent = "Hey Hi," + "  " + users[users.length - 1].name
+            + ", you have no upcoming trips. Where are you going next?"
+            ;
+
+        let explore = document.createElement("button");
+
+        let btn_div = document.createElement("div")
+
+        explore.setAttribute("id", "explore");
+
+        explore.onclick = function () {
+            home()
+        }
+
+        explore.textContent = "Start Exploring"
+
+        console.log(trips_info.textContent);
+
+
+        trips_div.append(heading)
+        main_cont.append(trips_div)
+        trips_div.append(img_div)
+        trips_div.append(trips_info);
+        btn_div.append(explore)
+        trips_div.append(btn_div);
+
+
+    }
+
+
+
+    function home() {
+        window.location.href = "home_page.html"
+    }
+
+
+    function get_app() {
+
+        let phone = document.getElementById("phone").value;
+        if (phone.length == 10) {
+            alert("We’ve sent you a text message with a link to download the app.")
+        } else {
+            alert("Please enter a valid phone number.")
+        }
+
+    }
+
+
+
+    function full_cart(bookedRooms) {
+        let main_container = document.getElementById("main_container");
+
+        bookedRooms.forEach(function (el) {
+
+            // hotel div created for each of hotel
+
+            let hotel_div = document.createElement("div");
+
+            hotel_div.setAttribute("class", "hotel_div")
+
+            let img_div = document.createElement("div")
+
+            img_div.setAttribute("class", "hotel_items")
+
+            let img = document.createElement("img");
+
+            img.src = el.img
+
+            // here is all info about bookedRooms
+
+            let info_div = document.createElement("div");
+
+            info_div.setAttribute("class", "hotel_items");
+
+            info_div.setAttribute("id", "hotel_info");
+
+            // in the left cont all info will be there
+
+            let left_cont = document.createElement("div");
+
+            left_cont.setAttribute("class", "hotel_info_items");
+
+            let hotel_name = document.createElement("h3");
+
+            hotel_name.textContent = el.hotel_name;
+           
+            left_cont.append(hotel_name);
+
+            let room_name = document.createElement("h4");
+
+            room_name.textContent = el.room_name;
+
+            left_cont.append(room_name)
+
+            let check_in = document.createElement("p");
+
+            check_in.textContent = el.check_in;
+
+            left_cont.append(check_in);
+
+            let check_out = document.createElement("p");
+
+            check_out.textContent = el.check_out;
+
+            left_cont.append(check_out);
+
+            let night_stauys = document.createElement("p");
+
+            night_stauys.textContent = el.night_stauys;
+
+            left_cont.append(night_stauys);
+
+            // in the right cont all amount will be there
+
+            let right_cont = document.createElement("div");
+
+            right_cont.setAttribute("class", "hotel_info_items");
+
+            let amount_div = document.createElement("div")
+
+            let amount = document.createElement("h1");
+
+            amount.setAttribute("class","position_abs");
+
+            amount.textContent = "$" + el.final_amount;
+
+            amount_div.append(amount)
+
+            right_cont.append(amount_div)
+
+            console.log( amount.textContent );
+
+
+
+
+
+            hotel_div.append(img_div);
+            hotel_div.append(info_div)
+            info_div.append(left_cont);
+            info_div.append(right_cont)
+            img_div.append(img);
+
+
+            main_container.append(hotel_div)
+        })
+
+        let sum = 0;
+
+        for (let i = 0; i < bookedRooms.length; i++) {
+              sum+=bookedRooms[i].final_amount
+        }
+        console.log(sum);
+
+        let total = document.createElement("h1");
+
+        total.textContent = "Total Amount"+ " "+"="+" " +"$"+sum;
+
+        main_container.append(total)
+        
+
+    }
+
+    
+</script>

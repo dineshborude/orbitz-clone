@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #4FC3F7;
+        }
+
+         a:hover {
+            text-decoration: underline;
+        }
+        #return{
+            padding: 1%;
+        }
+
+        .main_container {
+            width: 35%;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 50px;
+
+        }
+        h2{
+            font-family:  'Ubuntu', sans-serif;;
+        }
+
+        /* sign up container started */
+         #signup_container {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .item>input {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+
+        }
+
+        .top_margin {
+            margin-top: 10px;
+        }
+
+        .red-color {
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px 0px;
+            background-color: #df346d;
+            color: white;
+            border: none;
+            margin-top: 20px;
+        }
+     
+        .small_font {
+            font-size: 14px;
+            color: rgb(75, 74, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="return">
+        <a href="home_page.html">✖</a>
+    </div>
+    <hr>
+    <div class="main_container ">
+        <h2>create an account with email</h2>
+
+        <div id="signup_container">
+            <form onsubmit="signup(event)" id="myform" action="">
+
+                <div class="item">
+                    <input type="text" id="name" placeholder="First and last name">
+                </div>
+
+                <div class="item">
+                    <input type="email" id="email" placeholder="Email address">
+                </div>
+
+                <div class="item">
+                    <input type="password" id="password" placeholder="Password">
+                   
+                </div>
+                <p class="small_font">Must be atleast 8 characters</p>
+                <p class="small_font top_margin">By creating an account, I agree to the Orbitz Terms of Use, opens in a
+                    new windowPrivacy Policy,
+                    opens in a new windowand Orbitz Rewards Terms and Conditions.</p>
+                <button>Create account</button>
+               
+              
+        </div>
+        <p class="top_margin">Already have an account? <a href="signin.html" class="decoration">Sign in</a></p>
+
+
+    </div>
+
+  -->
+    </form>
+</body>
+
+</html>
+
+<script src="signup.js"></script>

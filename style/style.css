@@ -1,0 +1,74 @@
+.flexG {
+  display: flex;
+  gap: 2%;
+}
+
+.bookings {
+    height: 485px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.ninetyPercent {
+  width: 90%;
+  margin: auto;
+}
+
+.firstImageDiv {
+  display: flex;
+  gap: 2%;
+  margin: 1%;
+  margin-top: 3%;
+  /* margin-left: 5%; */
+}
+.imgDiv {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imgDiv img {
+  width: 100%;
+}
+
+/* 2nd image Div */
+
+.secondImageDiv {
+  margin: 2%;
+}
+
+.secImg > div {
+  /* border: 1px solid red; */
+  width: 25%;
+  height: 200px;
+}
+
+.secImg div:nth-child(1) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/10/At-the-airport_Orbitz.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(2) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_07_037_V2_QC.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(3) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/12/iStock-1150412835.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(4) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/12/iStock-621821582.jpg);
+  background-size: contain;
+}
+
+.secImg h3 {
+  margin-top: 55%;
+  margin-left: 2%;
+  color: white;
+}
+.secImg h5 {
+  color: white;
+  margin-left: 2%;
+}

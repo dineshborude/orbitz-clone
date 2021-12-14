@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Noto Sans Display', sans-serif;
+           
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #4FC3F7;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #return {
+            padding: 1%;
+        }
+
+        .main_container {
+            width: 35%;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        /* sign up container started */
+        #signin_container {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .item>input {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+
+        }
+
+
+        .top_margin {
+            margin-top: 10px;
+        }
+
+        .red-color {
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px 0px;
+            background-color: #df346d;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .small_font {
+            font-size: 14px;
+            color: rgb(75, 74, 74);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="return">
+        <a href="home_page.html">✖</a>
+    </div>
+    <hr>
+    <div class="main_container">
+
+        <h2>sign in with email</h2>
+        <div id="signin_container">
+            <form id="myform" onsubmit="signin(event)" action="">
+
+                <div class="item">
+                    <input type="email" id="email" placeholder="Email address">
+                </div>
+
+                <div class="item">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <p class="top_margin small_font">By signing in, I agree to the Orbitz Rewards Terms and Conditions.</p>
+                <button>Sign in</button>
+        </div>
+        <p class="top_margin small_font">Not a member? <a href="signup.html">Create an account</a></p>
+    </div>
+
+
+  
+
+
+</body>
+
+</html>
+
+<script src="signin.js"></script>

@@ -45,22 +45,20 @@ body {
 .right {
   height: 60px;
   width: 50%;
-  /* border: 1px solid white; */
   display: flex;
-  /* gap: 1%; */
+  gap: 7%;
+  align-items: center;
   margin-left: 15%;
 }
-
-.right > div {
-  width: 30%;
+.right li {
+  list-style: none;
+}
+.right a {
+  text-decoration: none;
   color: white;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  padding-top: 5%;
 }
 
-.right > div:hover {
+.right a:hover {
   color: rgb(0, 164, 187);
 }
 
