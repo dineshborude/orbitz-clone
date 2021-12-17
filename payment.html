@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>>
+
+    <script src="https://kit.fontawesome.com/ec66b54285.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ec66b54285.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            font-family: 'Noto Sans Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: #2196f3; */
+            margin: 0px 10px;
+            background-color: #f8f8f8;
+        }
+
+        /* navbar */
+
+        .navbar {
+            display: flex;
+            background-color: #0e112c;
+            padding: 12px 5%;
+
+        }
+
+        .left-list {
+            width: 60%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .left-list li,
+        .right-nav li {
+            list-style: none;
+            /*     
+    border: 1px solid black; */
+            padding: 10px 13px;
+        }
+
+        .left-list li {
+            margin-left: 5%;
+        }
+
+        .left-list li a,
+        .right-nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #0fa9f0;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        #main_container {
+            width: 90%;
+            margin: auto;
+            height: 1000px;
+        }
+
+        .sign_in {
+            width: 100%;
+            height: 100px;
+            /* background-color: yellow; */
+            /* border: 2px solid red; */
+            position: relative;
+            padding: 3%;
+        }
+
+        .fa-lock {
+            position: absolute;
+            left: 2%;
+            top: 36%;
+            color: #555555;
+        }
+        p{
+            color: #555555;
+            margin: 10px 3%;
+        }
+      
+
+        .inln_block {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* .position_abs{
+            position: absolute;
+            left: 4%;
+            top: 20%;
+        } */
+        .top_margin {
+            margin-top: 10px;
+        }
+
+
+
+        .items {
+            /* width: 40%; */
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            margin: 40px 0px;
+            border-radius: 5px;
+        }
+
+        .property {
+            width: 37.6%;
+            margin-left: 2%;
+        }
+
+        #img_div {
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid black; */
+        }
+
+        #img_div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .payment {
+            background-color: white;
+
+            /* margin: 80px auto; */
+            width: 60%;
+            height: auto;
+            padding: 35px;
+            padding-top: 70px;
+            /* position: relative; */
+
+
+        }
+
+        /* payment form started from here */
+
+        .payment h2 {
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .form .lable {
+            display: block;
+            color: #555555;
+            margin-bottom: 6px;
+        }
+
+
+        .form .input {
+            width: 60%;
+            padding: 10px 0px 10px 25px;
+            text-align: center;
+            border: 2px solid #dddddd;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            word-wrap: 3px;
+            outline: none;
+            font-size: 16px;
+
+        }
+
+        /* .card_grp{
+            display: flex;
+            justify-content: space-between;
+        } */
+
+        .card_item {
+            width: 65%;
+        }
+
+        .space {
+            margin-bottom: 20px;
+        }
+
+        .icon_relative {
+            position: relative;
+        }
+
+        .icon_relative .fa {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+            font-size: 20px;
+            color: #555555;
+        }
+
+        .btn button {
+            margin-top: 40px;
+            background-color: #2196f3;
+            padding: 12px;
+            color: #f8f8f8;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 60%;
+            font-size: large;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <ul class="left-list">
+            <div class="logo"><img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+                    alt="Logo"></div>
+            <li> <a href="">More travel</a></li>
+        </ul>
+
+
+        <ul class="right-nav">
+            <li><a href="">Espanol</a> </li>
+            <li> <a href="">List your property</a></li>
+            <li> <a href="">Support</a></li>
+            <li> <a href="trips.html">trips</a></li>
+            <li> <a href="signin.html">Sign in</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="main_container">
+
+        <h1>Secure booking — only takes 2 minutes!</h1>
+        <div class="sign_in">
+            <div class="inln_block">
+
+            </div>
+            <div class="inln_block">
+                <p class="position_abs">Signed in as</p>
+                <p id="email" class="top_margin"></p>
+            </div>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+
+        </div>
+
+
+
+        <div id="wraper">
+            <div class="payment items">
+                <h2>Payment Gateway</h2>
+
+                <div class="form">
+                    <form action="">
+                        <div class="card space icon_relative">
+                            <label class="lable">Card Holder:</label>
+                            <input type="text" name="card_holder" id="card_holder" class="input"
+                                placeholder="Enter Your Name">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="card space icon_relative">
+                            <label class="lable">Card Number:</label>
+                            <input type="text" name="card_number" id="card_number" class="input"
+                                placeholder="Card Number">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </div>
+                        <div class="card_grp space">
+                            <div class="card_item icon_relative">
+                                <label class="lable">Expiry date:</label>
+                                <input type="date" name="expiry_date" class="input" placeholder=" 00 / 00">
+                                <!-- <i class="fa fa-calendar" aria-hidden="true"></i> -->
+
+                            </div>
+                            <div class="card_item icon_relative">
+                                <label class="lable top_margin">Coupon Code</label>
+                                <input type="text" id="coupon" name="coupon" class="input" placeholder="000">
+                                <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+                            </div>
+                    </form>
+                </div>
+                <div class="btn">
+                    <button id="pay_button">Pay</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="items property">
+            <div id="img_div">
+
+            </div>
+            <div id="booking_details">
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script>
+    
+    function avi() {
+        alert("payment succesfull")
+        var card_holder = document.getElementById("card_holder").value;
+        var card_number = +document.getElementById("card_number").value;
+
+        console.log(typeof (card_number));
+
+    }
+
+    var users = JSON.parse(localStorage.getItem("users"));
+    console.log(users);
+
+
+    function email() {
+
+
+        var e = users[users.length - 1].email;
+
+        var email = document.getElementById("email");
+        email.textContent = e;
+
+
+
+    }
+    email()
+
+    var reserved_rooms = JSON.parse(localStorage.getItem("reserved rooms"));
+
+    let traval_details = JSON.parse(localStorage.getItem("traval_details"));
+
+
+
+
+    function payment_info() {
+
+        // getting Image
+        let last_reseved = reserved_rooms[reserved_rooms.length - 1]
+
+        let img_div = document.getElementById("img_div");
+
+        let img = document.createElement("img");
+
+        img.src = last_reseved.img;
+
+        img_div.append(img);
+
+        // getting hotel name
+        let booking_details = document.getElementById("booking_details")
+
+        let hotel_name = document.createElement("h4");
+
+        hotel_name.textContent = last_reseved.HN;
+
+        booking_details.append(hotel_name);
+
+        // getting hotel room
+
+        let room_name = document.createElement("p");
+
+        room_name.textContent = "Room :" + last_reseved.name
+
+        booking_details.append(room_name)
+
+        // getting travel details
+        let check_in = document.createElement("p");
+
+        check_in.textContent = "Check in: " + traval_details.check_in
+
+        booking_details.append(check_in);
+
+        let check_out = document.createElement("p");
+
+        check_out.textContent = "check_out: " + traval_details.check_out
+
+        booking_details.append(check_out)
+
+        var arr1 = traval_details.check_in.split("-").map(Number);
+
+        var arr2 = traval_details.check_out.split("-").map(Number);
+
+
+
+        // getting hotel nights using check_in and check_out
+
+
+        let hotel_nights = document.createElement("p");
+
+        let days = stay(arr1, arr2, hotel_nights);
+
+
+
+
+        hotel_nights.textContent = days + "-night stay"
+
+        booking_details.append(hotel_nights);
+
+        let price_details = document.createElement("h4");
+
+        price_details.textContent = "Price details";
+
+        booking_details.append(price_details);
+
+
+        // here calculating hotel rent
+
+        let calculation = document.createElement("p");
+
+        calculation.textContent = "1room" + " " + "x" + " " + days + " " + "nights" + "=" + "$" + (days * last_reseved.final_price);
+
+        hotel_fee = (days * last_reseved.final_price)
+
+
+
+
+
+
+
+        if (hotel_nights.textContent != "") {
+            booking_details.append(calculation);
+        }
+
+
+        // booking_details.append(hotel_fee);
+
+
+        // here calculating taxes 
+
+        let taxes = document.createElement("p");
+
+        taxes.textContent = "Taxes and fees" + "  " + "$" + Math.floor((days * last_reseved.final_price) * 10 / 100);
+
+        hotel_taxes = Math.floor((days * last_reseved.final_price) * 10 / 100);
+
+
+        booking_details.append(taxes);
+
+
+        // here calculating total
+
+
+        let total = hotel_fee + hotel_taxes;
+
+        let total_price = document.createElement("h4");
+
+        total_price.textContent = "Total" + " " + "=" + " " + "$" + total;
+
+        booking_details.append(total_price);
+        console.log(total);
+
+
+
+        let pay_button = document.getElementById("pay_button");
+
+        pay_button.onclick = function () {
+            bookedRoom(total,
+                total_price,
+                img.src,
+                hotel_name.textContent,
+                room_name.textContent,
+                check_in.textContent,
+                check_out.textContent,
+                hotel_nights.textContent
+
+            )
+        }
+
+
+
+
+
+    }
+
+    function stay(arr1, arr2, p) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[1] == arr2[1]) {
+                return arr2[2] - arr1[2]
+            } else {
+                return p.textContent = ""
+            }
+        }
+    }
+
+    payment_info()
+
+    if (localStorage.getItem("bookedRooms") == null) {
+        localStorage.setItem("bookedRooms", JSON.stringify([]))
+    }
+
+    let bookedRooms = JSON.parse(localStorage.getItem("bookedRooms"));
+    console.log(bookedRooms);
+
+    function bookedRoom(t, text, img,
+        hotel_name,
+        room_name,
+        check_in,
+        check_out,
+        night_stauys
+    ) {
+        let card_num = document.getElementById("card_number").value;;
+
+        let coupon_code = document.getElementById("coupon").value;
+
+
+
+        if (card_num.length != 16) {
+            alert("Please enter a valid card number.")
+        } else if (card_num.length == 16 && coupon_code != "masai30") {
+
+            var obj = {
+                img,
+                hotel_name,
+                room_name,
+                check_in,
+                check_out,
+                night_stauys,
+                t
+
+            }
+            setTimeout(function () { window.location.href = "booked.html" }, 3000);
+
+
+            bookedRooms.push(obj)
+
+            localStorage.setItem("bookedRooms", JSON.stringify(bookedRooms))
+
+            console.log(JSON.parse(localStorage.getItem("bookedRooms")));
+
+        }
+        else {
+            if (card_num.length == 16 && coupon_code == "masai30") {
+
+                text.innerHTML = null;
+                t = Math.floor(t - (t * (10 / 100)));
+                console.log(t);
+                text.innerHTML = "Total" + " " + "=" + " " + "$" + t;
+
+                var final_amount = t
+
+
+                var obj = {
+                    img,
+                    hotel_name,
+                    room_name,
+                    check_in,
+                    check_out,
+                    night_stauys,
+                    final_amount
+
+                }
+                // console.log(obj);
+
+                setTimeout(function () { window.location.href = "booked.html" }, 3000);
+                bookedRooms.push(obj)
+
+                localStorage.setItem("bookedRooms", JSON.stringify(bookedRooms))
+
+                console.log(JSON.parse(localStorage.getItem("bookedRooms")));
+            }
+        }
+
+
+    }
+
+</script>
+<!-- 
+<script>
+    function avi() {
+        alert("payment succesfull")
+        var card_holder = document.getElementById("card_holder").value;
+        var card_number = +document.getElementById("card_number").value;
+        console.log(typeof (card_number));
+    }
+    var users = JSON.parse(localStorage.getItem("users"));
+    console.log(users);
+    function email() {
+        var e = users[users.length - 1].email;
+        var email = document.getElementById("email");
+        email.textContent = e;
+    }
+    email()
+    var reserved_rooms = JSON.parse(localStorage.getItem("reserved rooms"));
+    let traval_details = JSON.parse(localStorage.getItem("traval_details"));
+    function payment_info() {
+        // getting Image
+        let last_reseved = reserved_rooms[reserved_rooms.length - 1]
+        let img_div = document.getElementById("img_div");
+        let img = document.createElement("img");
+        img.src = last_reseved.img;
+        img_div.append(img);
+        // getting hotel name
+        let booking_details = document.getElementById("booking_details")
+        let hotel_name = document.createElement("h4");
+        hotel_name.textContent = last_reseved.HN;
+        booking_details.append(hotel_name);
+        // getting hotel room
+        let room_name = document.createElement("p");
+        room_name.textContent = "Room :" + last_reseved.name
+        booking_details.append(room_name)
+        // getting travel details
+        let check_in = document.createElement("p");
+        check_in.textContent = "Check in: " + traval_details.check_in
+        booking_details.append(check_in);
+        let check_out = document.createElement("p");
+        check_out.textContent = "check_out: " + traval_details.check_out
+        booking_details.append(check_out)
+        var arr1 = traval_details.check_in.split("-").map(Number);
+        var arr2 = traval_details.check_out.split("-").map(Number);
+        // getting hotel nights using check_in and check_out
+        let hotel_nights = document.createElement("p");
+        let days = stay(arr1, arr2, hotel_nights);
+        hotel_nights.textContent = days + "-night stay"
+        booking_details.append(hotel_nights);
+        let price_details = document.createElement("h4");
+        price_details.textContent = "Price details";
+        booking_details.append(price_details);
+        // here calculating hotel rent
+        let calculation = document.createElement("p");
+        calculation.textContent = "1room" + " " + "x" + " " + days + " " + "nights" + "=" + "$" + (days * last_reseved.final_price);
+        hotel_fee = (days * last_reseved.final_price)
+        if (hotel_nights.textContent != "") {
+            booking_details.append(calculation);
+        }
+        // booking_details.append(hotel_fee);
+        // here calculating taxes 
+        let taxes = document.createElement("p");
+        taxes.textContent = "Taxes and fees" + "  " + "$" + Math.floor((days * last_reseved.final_price) * 10 / 100);
+        hotel_taxes = Math.floor((days * last_reseved.final_price) * 10 / 100);
+        booking_details.append(taxes);
+        // here calculating total
+        let total = hotel_fee + hotel_taxes;
+        let total_price = document.createElement("h4");
+        total_price.textContent = "Total" + " " + "=" + " " + "$" + total;
+        booking_details.append(total_price);
+        console.log(total);
+        let pay_button = document.getElementById("pay_button");
+        pay_button.onclick = function () {
+            bookedRoom(total,
+                total_price,
+                img.src,
+                hotel_name.textContent,
+                room_name.textContent,
+                check_in.textContent,
+                check_out.textContent,
+                hotel_nights.textContent
+            )
+        }
+    }
+    function stay(arr1, arr2, p) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[1] == arr2[1]) {
+                return arr2[2] - arr1[2]
+            } else {
+                return p.textContent = ""
+            }
+        }
+    }
+    payment_info()
+    if (localStorage.getItem("bookedRooms") == null) {
+        localStorage.setItem("bookedRooms", JSON.stringify([]))
+    }
+    let bookedRooms = JSON.parse(localStorage.getItem("bookedRooms"));
+    console.log(bookedRooms);
+    function bookedRoom(t, text, img,
+        hotel_name,
+        room_name,
+        check_in,
+        check_out,
+        night_stauys
+    ) {
+        let card_num = document.getElementById("card_number").value;;
+        let coupon_code = document.getElementById("coupon").value;
+        if (card_num.length != 16) {
+            alert("Please enter a valid card number.")
+        } else if (card_num.length == 16 && coupon_code != "masai30") {
+            var obj = {
+                img,
+                hotel_name,
+                room_name,
+                check_in,
+                check_out,
+                night_stauys,
+                t
+            }
+            setTimeout(function () { window.location.href = "booked.html" }, 3000);
+            bookedRooms.push(obj)
+            localStorage.setItem("bookedRooms", JSON.stringify(bookedRooms))
+            console.log(JSON.parse(localStorage.getItem("bookedRooms")));
+        }
+        else {
+            if (card_num.length == 16 && coupon_code == "masai30") {
+                text.innerHTML = null;
+                t = Math.floor(t - (t * (10 / 100)));
+                console.log(t);
+                text.innerHTML = "Total" + " " + "=" + " " + "$" + t;
+                var final_amount = t
+                var obj = {
+                    img,
+                    hotel_name,
+                    room_name,
+                    check_in,
+                    check_out,
+                    night_stauys,
+                    final_amount
+                }
+                // console.log(obj);
+                setTimeout(function () { window.location.href = "booked.html" }, 3000);
+                bookedRooms.push(obj)
+                localStorage.setItem("bookedRooms", JSON.stringify(bookedRooms))
+                console.log(JSON.parse(localStorage.getItem("bookedRooms")));
+            }
+        }
+    }
+</script> -->
+
+
+<script src="payment.js"></script>

@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Noto Sans Display", sans-serif;
+}
+body {
+  background-color: #eeeeee;
+}
+.top_margin {
+  margin-top: 20px;
+}
+/* navbar */
+
+.navbar {
+  display: flex;
+  background-color: #0e112c;
+  padding: 12px 5%;
+}
+.left-list {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.left-list li,
+.right-nav li {
+  list-style: none;
+  /*     
+    border: 1px solid black; */
+  padding: 10px 13px;
+}
+.left-list li {
+  margin-left: 5%;
+}
+.left-list li a,
+.right-nav li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: #0fa9f0;
+}
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* search container */
+
+#big_img {
+  background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  /* background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Deals_v3_lpheroB_1680x945_20200730.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"); */
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 5% 50px 5%;
+}
+#search_container {
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+
+#plans_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans {
+  width: 15%;
+  position: relative;
+}
+
+.fa {
+  position: absolute;
+  left: 45%;
+  color: #555555;
+}
+.plans button {
+  width: 100%;
+  padding: 20px 0px 5px 0px;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bottom_border {
+  border-bottom: 2px solid black;
+}
+
+/* info box is an input box */
+
+#info {
+  width: 100%;
+  height: 100px;
+  /* border: 2px solid black; */
+  padding: 20px 2% 0px 2%;
+}
+
+#forms {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+#forms > div {
+  /* flex-grow: 1; */
+  height: 100%;
+  /* border: 1px solid black; */
+  width: 40%;
+}
+
+#fill {
+  display: flex;
+  height: 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+#fill > div {
+  width: 23%;
+  height: 100%;
+}
+
+.inpt_item {
+  height: 100%;
+  width: 100%;
+}
+
+/* below is search button's div */
+
+#search_btn {
+  width: 17%;
+  margin: 50px auto;
+}
+#search_btn button {
+  width: 100%;
+  height: 100%;
+  background-color: #df346d;
+  font-size: 17px;
+  color: white;
+  border: none;
+  padding: 15px 0px;
+}
+
+.white_text {
+  color: white;
+}
+/* main body started */
+
+.main-body {
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid black;
+    */
+}
+
+.first-flex {
+  display: flex;
+  margin: 20px 0px;
+  width: 100%;
+  /* border: 1px solid red; */
+  /* height: 100px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item1 {
+  width: 32%;
+  /* border: 1px solid green; */
+  /* justify-content: space-between; */
+}
+.item1 img {
+  width: 100%;
+}
+
+/* what's new layout started */
+
+#whats_new {
+  width: 100%;
+  /* height: 400px; */
+  /* border: 2px solid red; */
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 15px;
+}
+
+#whats_new div:nth-child(1) {
+  grid-area: 1/ 1/3/3;
+}
+.left_img {
+  width: 100%;
+  height: 70%;
+}
+.planning {
+  margin: 15px 0px 10px 2%;
+}
+.new_items {
+  /* border: 1px solid black; */
+  background-color: white;
+}
+.new_items div:nth-child(1) {
+  width: 30%;
+  height: 100%;
+  /* border: 2px solid grey; */
+}
+.right_img {
+  width: 100%;
+  height: 100%;
+}
+
+.new_items div:nth-child(2) {
+  width: 65%;
+  height: 100%;
+  margin-left: 2%;
+  /* border: 2px solid grey; */
+  padding: 30px 3% 30px 3%;
+}
+.inl_block {
+  display: inline-block;
+  vertical-align: top;
+}
+.right_para {
+  margin-top: 20px;
+}
+/* <!-- properties with added perks --> */
+
+#featured {
+  width: 74%;
+  height: 250px;
+  /* border: 2px solid gray; */
+  margin-top: 50px;
+  padding: 1%;
+  margin-bottom: 20px;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/23/ORB_JetReset_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+}
+.color_white {
+  color: white;
+}
+
+.inl_block_botom {
+  margin-top: 20%;
+}
+.text_bottom {
+  margin-top: 30%;
+}
+
+/* Travel tips from the pros */
+
+.national {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid red; */
+  margin-top: 10px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.travel_tips {
+  height: 100%;
+  width: 32%;
+  /* border: 2px solid gray; */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.national_img {
+  width: 100%;
+  height: 80%;
+  padding: 5%;
+  /* background-color: gray; */
+}
+
+#national_park {
+  background-image: url("https://th.bing.com/th/id/OIP.6ITHElgbLXrJB1eGap8XTwHaEc?w=292&h=180&c=7&r=0&o=5&pid=1.7");
+}
+#hangouts {
+  background-image: url("https://th.bing.com/th/id/OIP.jP4Hkz1JJqroE2fNUrdAoQHaE8?pid=ImgDet&rs=1");
+}
+
+#road_trip {
+  background-image: url("https://th.bing.com/th/id/OIP.r9M2o78wtd4gVABYzinyowHaEL?pid=ImgDet&rs=1");
+}
+.national_para {
+  padding: 3%;
+}
+
+/* Vacation your way */
+
+#vacation {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+.vacation_item {
+  width: 16%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.vacation_item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.position_abs {
+  position: absolute;
+  left: 30%;
+  top: 45%;
+}
+
+/* <!-- download orbitz app --> */
+
+#download {
+  margin-top: 3%;
+  width: 96%;
+  margin-left: 2%;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#download div:nth-child(2) {
+  grid-area: 1/2/2/4;
+  padding: 4% 3%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.app_items {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.download_items img {
+  width: 100%;
+  height: 100%;
+}
+
+.big_font {
+  font-size: 27px;
+  font-weight: 600;
+}
+.add_margin {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+#phone {
+  width: 80%;
+  height: 50px;
+  padding: 2% 4%;
+  letter-spacing: 1px;
+  outline: none;
+}
+.mobile {
+  display: inline-block;
+  width: 45%;
+  /* padding: 10px 20px; */
+}
+
+#last_btn {
+  width: 70%;
+  height: 50px;
+  background-color: #df346d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.scan img {
+  width: 80%;
+  height: 150px;
+  position: absolute;
+  /* background-color: yellow; */
+}
+
+/* footer started */
+
+a {
+  text-decoration: none;
+  color: #31b5f3;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  padding-right: 1%;
+}
+
+.footer_item li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.footer_item > div {
+  font-weight: 600;
+}
+.text_center {
+  text-align: center;
+}
+.small_font {
+  font-size: 14px;
+  color: rgb(75, 74, 74);
+}
+.small_text {
+  font-size: 13px;
+}
+
+.empty_div {
+  height: 100px;
+}

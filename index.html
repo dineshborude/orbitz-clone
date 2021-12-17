@@ -1,180 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <script
-      src="https://kit.fontawesome.com/3e95405894.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Orbitz Hotel Deals, Flight, Cheap Vacation & Rental Cars</title>
-  </head>
-  <body>
-    <!-- Navbar code starts from here-->
-    <div id="navbar">
-      <div class="left">
-        <div>
-          <img
-            src="https://www.orbitz.com/press/wp-content/uploads/2019/12/ORBZ_WHT_Logo_RGB.png"
-            alt="Orbitz Logo"
-          />
-        </div>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            More travel
-            <i class="fas fa-chevron-circle-down"></i>
-          </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#stays">
-              <i class="fas fa-hotel"></i>
-              Stays</a
-            >
-            <a href="#flight">
-              <i class="fas fa-plane-departure"></i>
-              Flight</a
-            >
-            <a href="#packages">
-              <i class="fas fa-suitcase-rolling"></i>
-              Packages</a
-            >
-            <a href="#home">
-              <i class="fas fa-car"></i>
-              Cars</a
-            >
-            <a href="#about">
-              <i class="fas fa-ship"></i>
-              Cruises</a
-            >
-            <a href="#things">Things to do</a>
-            <a href="#deals">Deals</a>
-            <a href="#groups">Groups & Meetings</a>
-            <a href="#blog">Travel Blog</a>
-          </div>
-        </div>
-      </div>
 
-      <ul class="right">
-        <li><a href="">Espanol</a></li>
-        <li><a href="">List your property</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="signin.html">Sign in</a></li>
-      </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- <link rel="stylesheet" href="C:\Users\hp\Documents\html2\avi's project\ORBITZ_clone\home_page.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ec66b54285.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <ul class="left-list">
+            <div class="logo"><img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+                    alt="Logo"></div>
+            <li> <a href="">More travel</a></li>
+        </ul>
+
+
+        <ul class="right-nav">
+            <li><a href="">Espanol</a> </li>
+            <li> <a href="">List your property</a></li>
+            <li> <a href="">Support</a></li>
+            <li> <a href="trips.html">trips</a></li>
+            <li> <a href="signin.html">Sign in</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div id="big_img">
+        <div id="search_container">
+            <div id="plans_box">
+                <div class="plans">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <button id="stays">
+                        stays</button>
+                </div>
+                <div class="plans">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    <button id="flites">flights</button>
+                </div>
+                <div class="plans">
+                    <i class="fa fa-taxi" aria-hidden="true"></i>
+                    <button id="cars">Cars</button>
+                </div>
+                <div class="plans">
+                    <button id="pakages">Packages</button>
+                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+
+                </div>
+                <div class="plans">
+                    <button id="things">Things to do</button>
+                </div>
+                <div class="plans">
+                    <button id="cruises">Cruises</button>
+                </div>
+
+            </div>
+        </div>
+        <h1 class="white_text top_margin">Members save more</h1>
+        <h3 class="white_text">Sign in to access Insider Prices, get amazing discounts on select hotels</h3>
+
     </div>
-    <div class="bookings"></div>
-    <!-- 90% width body -->
+
+
+
+    <div class="main-body">
+        <!-- <div class="search_box">
+        </div> -->
+
+        <!-- <div class="first-flex">
+            <div class="item1">
+                <div class="left-img"><img
+                        src="https://i.ibb.co/D8TzpNn/ORB-Brand-Promise-Travel-As-You-Are-img-B-840x473-20210611.webp"
+                        alt=""></div>
+            </div>
+            <div class="item1">
+                <div class="left-img"><img
+                        src="https://i.ibb.co/dcPcvbb/ORB-Brand-Promise-Rewards-img-B-840x473-20210331.webp" alt="">
+                </div>
+            </div>
+            <div class="item1">
+                <div class="left-img"><img
+                        src="https://i.ibb.co/Br43sTL/ORB-Brand-Promise-IGLTA-img-B-840x473-20210330.webp" alt=""></div>
+            </div>
+        </div> -->
+
+        <!-- <h2>What's new</h2>
+
+        <div id="whats_new">
+            <div class="new_items">
+                <img class="left_img"
+                    src="https://forever.travel-assets.com/flex/flexmanager/images/2021/03/25/ORB_FreeCancellation_lpheroB_1680x945_20210323.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+                    alt="">
+                <h3 class="planning">Planning a trip?</h3>
+                <p class="planning small_font">Check out our top deals on Hotels flights and Packages booking!</p>
+            </div>
+            <div class="new_items">
+                <div class="inl_block">
+                    <img class="right_img"
+                        src="https://i.ibb.co/KNgYNFj/ORB-Storefront-Small-Marquee-Flex-Fares-164x152.jpg" alt="">
+                </div>
+                <div class="inl_block">
+                    <h3>Car Rental Deals</h3>
+                    <p class="right_para small_font">Check out our top deals on Hotels flights and Packages booking!</p>
+                </div>
+            </div> -->
+            <!-- <div class="new_items">
+                <div class="inl_block">
+                    <img class="right_img"
+                        src="https://forever.travel-assets.com/flex/flexmanager/images/2020/03/27/ORB_LastMinuteDeals_lpheroF_1320x742_20200327.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+                        alt="">
+                </div>
+                <div class="inl_block">
+                    <h3>Last Minute Deals</h3>
+                    <p class="right_para small_font">Book a last minute stay because sometimes
+                        the best things in life are unplanned
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- properties with added perks
+        <div id="featured">
+            <div class="inl_block_botom">
+                <h3 class="color_white">Jet and Reset</h3>
+                <p class="color_white small_text">Hawai, Socal, Mexico, the caribben florida if there is sun and fun
+                    there is flite for you </p>
+            </div>
+        </div> -->
+
+        <!-- Travel tips from the pros -->
+        <!-- <h1>Travel tips from the pros</h1>
+
+        <div class="national">
+            <div class="travel_tips">
+                <div id="national_park" class="national_img">
+                    <h3 class="color_white text_bottom">National park experience you must try</h3>
+                </div>
+                <div class="national_para">
+                    <p class="small_font">Surfing dunes kayaking caves dyving kelp forest-eye</p>
+                </div>
+            </div>
+            <div class="travel_tips">
+                <div id="hangouts" class="national_img">
+                    <h3 class="color_white text_bottom">Best LGBTQ hangouts in every state</h3>
+                </div>
+                <div class="national_para">
+                    <p class="small_font">Did your favorite make the list</p>
+                </div> -->
+            <!-- </div>
+            <div class="travel_tips">
+                <div id="road_trip" class="national_img">
+                    <h3 class="color_white text_bottom">The perfecr roadtrip</h3>
+                </div>
+                <div class="national_para">
+                    <p class="small_font">Find an adventure for every season</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Vacation your way flex-->
+        <!-- <h1>Vacation your way</h1>
+        <div id="vacation">
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/WzQWYnf/ORB-Storefront-VYOWtile-LGBTQIA-400x400.webp" alt="">
+                <h4 class="position_abs color_white">LGBTQIA</h4>
+            </div>
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/mDhKVGF/ORB-Affinity-Luxury-img-B-444x444-20200731.webp" alt="">
+                <h4 class="position_abs color_white">Luxury</h4>
+            </div>
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/Yt6dtgc/ORB-Affinity-All-Inclusive-img-B-444x444-20200731.webp" alt="">
+                <h4 class="position_abs color_white">ALL-inclusive</h4>
+            </div>
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/RzfW5mF/ORB-Affinity-Last-Minute-img-B-444x444-20200731.webp" alt="">
+                <h4 class="position_abs color_white">Last minite</h4>
+
+            </div>
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/j8mxD3S/ORB-Affinity-Beach-img-B-444x444-20200731.webp" alt="">
+                <h4 class="position_abs color_white">Beach</h4>
+            </div>
+            <div class="vacation_item">
+                <img src="https://i.ibb.co/885qFrs/ORB-Affinity-Romantic-img-B-444x444-20200731.webp" alt="">
+                <h4 class="position_abs color_white">Romantic</h4>
+            </div>
+        </div>
+ -->
+
+         <!-- 90% width body -->
     <div class="ninetyPercent">
-      <!-- first image Div -->
-      <div class="firstImageDiv">
-        <div class="imgDiv">
-          <img
-            src="https://i.ibb.co/D8TzpNn/ORB-Brand-Promise-Travel-As-You-Are-img-B-840x473-20210611.webp"
-            alt=""
-          />
-        </div>
-        <div class="imgDiv">
-          <img
-            src="https://i.ibb.co/dcPcvbb/ORB-Brand-Promise-Rewards-img-B-840x473-20210331.webp"
-            alt=""
-          />
-        </div>
-        <div class="imgDiv">
-          <img
-            src="https://i.ibb.co/Br43sTL/ORB-Brand-Promise-IGLTA-img-B-840x473-20210330.webp"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="secondImageDiv">
-        <h1>Featured Offers</h1>
-        <div class="secImg flexG">
-          <div>
-            <h3>Last-Minute Deals</h3>
-            <h5>Getaway today</h5>
+        <!-- first image Div -->
+        <div class="firstImageDiv">
+          <div class="imgDiv">
+            <img
+              src="https://i.ibb.co/D8TzpNn/ORB-Brand-Promise-Travel-As-You-Are-img-B-840x473-20210611.webp"
+              alt=""
+            />
           </div>
-          <div>
-            <h3>All-Inclusive resort</h3>
-            <h5>Enjoy Sun and Fun</h5>
+          <div class="imgDiv">
+            <img
+              src="https://i.ibb.co/dcPcvbb/ORB-Brand-Promise-Rewards-img-B-840x473-20210331.webp"
+              alt=""
+            />
           </div>
-          <div>
-            <h3>Insider Prices</h3>
-            <h5>Members get rewarded</h5>
-          </div>
-          <div>
-            <h3>Jet and reset</h3>
-            <h5>Fly south for the winter</h5>
+          <div class="imgDiv">
+            <img
+              src="https://i.ibb.co/Br43sTL/ORB-Brand-Promise-IGLTA-img-B-840x473-20210330.webp"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-      <!-- Third Img Div box -->
-      <div class="thirdImageDiv flexG">
-        <div class="rightThird">
-          <img
-            src="https://forever.travel-assets.com/flex/flexmanager/images/2021/06/23/ORB_JetReset_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
-            alt=""
-          />
-          <h3>Members save more</h3>
-          <p>
-            Sign in to access the insider Prices, Get amazing discounts on hotel
-            around the world.
-          </p>
-        </div>
-        <div class="leftThird">
-          <div class="flexG">
-            <div>
+
+        <!-- second Image Div -->
+
+        <div class="secondImageDiv">
+            <h1>Featured Offers</h1>
+            <div class="secImg flexG">
+              <div>
+                <h3>Last-Minute Deals</h3>
+                <h5>Getaway today</h5>
+              </div>
+              <div>
+                <h3>All-Inclusive resort</h3>
+                <h5>Enjoy Sun and Fun</h5>
+              </div>
+              <div>
+                <h3>Insider Prices</h3>
+                <h5>Members get rewarded</h5>
+              </div>
+              <div>
+                <h3>Jet and reset</h3>
+                <h5>Fly south for the winter</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Img Div box -->
+          <div class="thirdImageDiv flexG">
+            <div class="rightThird">
               <img
-                src="https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_10_423_V1_QC.jpg"
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/06/23/ORB_JetReset_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
                 alt=""
               />
+              <h3>Members save more</h3>
+              <p>
+                Sign in to access the insider Prices, Get amazing discounts on hotel
+                around the world.
+              </p>
             </div>
-            <div>
-              <h3>Flights Under $199</h3>
-              <p>Find fares under $199 with flexibility</p>
+            <div class="leftThird">
+              <div class="flexG">
+                <div>
+                  <img
+                    src="https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_10_423_V1_QC.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3>Flights Under $199</h3>
+                  <p>Find fares under $199 with flexibility</p>
+                </div>
+              </div>
+              <div class="flexG">
+                <div>
+                  <img
+                    src="https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_23_033_V2_QC.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3>Stay Local</h3>
+                  <p>Make yournext adventure a road trip near home.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flexG">
-            <div>
-              <img
-                src="https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_23_033_V2_QC.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <h3>Stay Local</h3>
-              <p>Make yournext adventure a road trip near home.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- fourth Image Div -->
+
+    <!-- fourth Image Div -->
       <div class="fourthImageDiv">
         <h3>Today's Top Deals</h3>
         <p>Vacations are even more rewardingwith our best offers.</p>
       </div>
-    </div>
-  </body>
-</html>
-<script>
-  /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+      <div class="fifthImageDiv">
+        <div>
+          <h2>National Parks</h2>
+          <p>There is plenty to keep you busy.</p>
+          <button>Learn More</button>
+        </div>
+        
+        <div>
+          <h2>The Perfect Road Trip</h2>
+          <p>Find adventure for every season</p>
+          <button>Read On</button>
+        </div>
+        
+      </div>
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
-    }
-  };
-</script>
+
+
+
+
+
+
+
+
+        <!-- download orbitz app -->
+
+        <div id="download">
+            <div class="download_items">
+                <img src="https://thumbnails.trvl-media.com/CSYM6eB9q4W5M2gqyZNY_NfDEFQ=/a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg"
+                    alt="">
+            </div>
+            <div class="download_items">
+                <div class="app_items">
+                    <div class="big_font">Rewards are waiting for you in the Orbitz app</div>
+                    <ul>
+                        <li class="small_font add_margin">Earn 4% back when you book your hotel in app, vs. 3% on site
+                        </li>
+                        <li class="small_font add_margin">Get flight status and gate number notifications</li>
+                        <li class="small_font add_margin">Have questions about your stay? Message your hotel right in
+                            the app</li>
+                    </ul>
+
+
+                    <h3 class="top_margin">Text yourself a download link</h3>
+                    <div class="mobile top_margin">
+                        <input type="text" id="phone" placeholder="Phone number">
+                    </div>
+                    <div class="mobile top_margin">
+                        <button id="last_btn" onclick="get_app()">Get the app</button>
+                    </div>
+                    <p class="small_font">By providing your number, you agree to receive a one-time automated text
+                        message
+                        with a link to get the app. Standard text message rates may apply.</p>
+                </div>
+                <div class="app_items scan">
+                    <div><img src="https://i.ibb.co/XttKbTC/70201.jpg" alt=""></div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer started -->
+
+        <footer>
+            <div class="footer_item">
+                <div><img
+                        src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+                        alt=""></div>
+            </div>
+            <div class="footer_item">
+                <div>Company</div>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">List your property</a></li>
+                    <li><a href="">Partnerships</a></li>
+                    <li><a href="">Newsroom</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Site Map</a></li>
+                    <li><a href="">Orbitz Rewards</a></li>
+                    <li><a href="">Advertising</a></li>
+                </ul>
+
+            </div>
+            <div class="footer_item">
+                <div>Explore</div>
+                <ul>
+                    <li><a href=""> Hotels in United States</a></li>
+                    <li><a href=""> Vacation Rentals in United States</a></li>
+                    <li><a href=""> Car Rentals in United States</a></li>
+                    <li><a href="">Domestic Flights</a></li>
+                    <li><a href=""> Vacation Packages in United States</a></li>
+                    <li><a href="">Orbitz Reviews</a></li>
+                    <li><a href="">Orbitz Coupons</a></li>
+                    <li><a href="">LGBTQ Travel</a></li>
+                    <li><a href="">Unique Accommodations</a></li>
+                    <li><a href="">Travel Blog</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer_item">
+                <div>Policies</div>
+                <ul>
+                    <li><a href=""> Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href=""> Orbitz Rewards Terms</a></li>
+                    <li><a href=""> Do not sell my personal information</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer_item">
+                <div>Help</div>
+                <ul>
+                    <li><a href=""> Support</a></li>
+                    <li><a href="">Cancel your hotel or vacation rental <br> booking</a></li>
+                    <li><a href="">Cancel your flight</a></li>
+                    <li><a href=""> Refund timelines, policies & processes</a></li>
+                    <li><a href="">Use an Orbitz Coupon</a></li>
+                </ul>
+            </div>
+
+        </footer>
+        <hr>
+
+        <p class="text_center top_margin small_font">© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+        </p>
+        <p class="text_center small_font">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+            trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+
+        <!-- end of main body  -->
+
+
+
+    </div>
+
+    <div class="empty_div">
+
+    </div>
+</body>
+
+</html>
+
+
+<script src="home.js"></script>

@@ -1,0 +1,439 @@
+.flexG {
+  display: flex;
+  gap: 2%;
+}
+
+.bookings {
+  height: 485px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: cover;
+  background-position: center;
+}
+
+.ninetyPercent {
+  width: 96%;
+  /* margin: auto; */
+}
+
+.firstImageDiv {
+  display: flex;
+  gap: 2%;
+  margin: 1%;
+  margin-top: 3%;
+  /* margin-left: 5%; */
+}
+.imgDiv {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imgDiv img {
+  width: 100%;
+}
+
+/* 2nd image Div */
+
+.secondImageDiv {
+  margin: 2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.secImg > div {
+  /* border: 1px solid red; */
+  width: 25%;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.secImg div:nth-child(1) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/10/At-the-airport_Orbitz.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(2) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2021/04/Shot_07_037_V2_QC.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(3) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/12/iStock-1150412835.jpg);
+  background-size: contain;
+}
+.secImg div:nth-child(4) {
+  background: url(https://www.orbitz.com/press/wp-content/uploads/2019/12/iStock-621821582.jpg);
+  background-size: contain;
+}
+
+.secImg h3 {
+  margin-top: 55%;
+  margin-left: 2%;
+  color: white;
+}
+.secImg h5 {
+  color: white;
+  margin-left: 2%;
+}
+
+/* third */
+
+.thirdImageDiv {
+  /* border: 1px solid red; */
+  width: 96%;
+  height: 350px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  margin: 2%;
+  /* margin-right: 2%; */
+}
+
+.rightThird {
+  /* border: 1px solid blue; */
+  height: 300px;
+  width: 70%;
+}
+
+.rightThird img {
+  width: 100%;
+  height: 100%;
+}
+
+.rightThird p {
+  color: gray;
+}
+.leftThird {
+  border: 1px transparent;
+  height: 350px;
+  width: 30%;
+}
+
+.leftThird > div {
+  /* border: 1px solid red; */
+  height: 150px;
+  margin-bottom: 10%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.leftThird div div:nth-child(1) {
+  /* border: 1px solid blue; */
+  width: 30%;
+  height: 100%;
+}
+
+.leftThird div div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftThird div div:nth-child(2) {
+  /* border: 1px solid blue; */
+  width: 30%;
+  height: 100%;
+  flex-grow: 2;
+}
+
+.leftThird div div:nth-child(2) h3 {
+  margin-top: 15%;
+}
+.leftThird div div:nth-child(2) p {
+  color: gray;
+}
+
+/* fourth full image div */
+
+.fourthImageDiv {
+  height: 250px;
+  width: 96%;
+  margin-left: 2%;
+  border: 1px solid transparent;
+  background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/03/25/ORB_FreeCancellation_lpheroB_1680x945_20210323.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.fourthImageDiv h3 {
+  margin-top: 17%;
+  margin-left: 2%;
+  color: white;
+}
+
+.fourthImageDiv p {
+  color: lightseagreen;
+  margin-left: 2%;
+}
+
+.fifthImageDiv {
+  height: 300px;
+  width: 96%;
+  /* border: 1px solid red; */
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 2%;
+}
+
+.fifthImageDiv > div {
+  /* border: 1px solid blue; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  width: 55%;
+}
+
+.fifthImageDiv div:nth-child(1) {
+  background: url(https://s3-us-east-2.amazonaws.com/orbitz-media/blog/wp-content/uploads/2020/10/13122048/Great-Smoky-Mountains-National-Park.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fifthImageDiv div:nth-child(2) {
+  background: url(https://s3-us-east-2.amazonaws.com/orbitz-media/blog/wp-content/uploads/2019/06/12100549/Orbitz_FamilyRoadTrip1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fifthImageDiv h2 {
+  margin-top: 30%;
+  margin-left: 2%;
+  color: white;
+}
+
+.fifthImageDiv p {
+  margin-left: 2%;
+  color: white;
+}
+
+.fifthImageDiv button {
+  margin-left: 2%;
+  margin-top: 2%;
+  height: 30px;
+  width: 20%;
+  color: rgb(0, 164, 187);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+/* footer app download */
+
+#downloadApp {
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  display: grid;
+  width: 96%;
+  margin-left: 2%;
+  height: 370px;
+  grid-template-columns: 35% 32% 32%;
+  grid-template-rows: 370px;
+}
+
+#downloadApp div:nth-child(2) {
+  grid-area: 1/2/2/4;
+  padding-left: 4%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.app_items h3 {
+  margin-top: 4%;
+}
+
+.app_items {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.downloadAppImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.big_font {
+  font-size: 27px;
+  font-weight: 600;
+}
+.add_margin {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+#phone {
+  width: 80%;
+  height: 30px;
+  margin-top: 2%;
+  padding: 2% 4%;
+  letter-spacing: 1px;
+  outline: none;
+}
+.mobile {
+  display: inline-block;
+  /* width: 45%; */
+  /* height: 2px; */
+  /* padding: 10px 20px; */
+}
+
+#last_btn {
+  width: 70%;
+  height: 50px;
+  background-color: #df346d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.scan img {
+  width: 80%;
+  height: 150px;
+  position: absolute;
+  /* background-color: yellow; */
+}
+
+/* footer started */
+
+a {
+  text-decoration: none;
+  color: #31b5f3;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  width: 96%;
+  margin-left: 2%;
+  height: 300px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  padding-right: 1%;
+}
+
+.footer_item li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.footer_item > div {
+  font-weight: 600;
+}
+.text_center {
+  text-align: center;
+}
+.small_font {
+  font-size: 14px;
+  color: rgb(75, 74, 74);
+}
+.small_text {
+  font-size: 13px;
+}
+
+.empty_div {
+  height: 100px;
+}
+
+#big_img {
+  /* background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/31/ORB_Deals_v3_lpheroB_1680x945_20200730.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"); */
+  width: 100%;
+  height: 500px;
+
+  padding: 50px 5% 50px 5%;
+}
+#search_container {
+  padding: 10px;
+  width: 90%;
+  height: 300px;
+  background-color: white;
+}
+
+#plans_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans {
+  width: 15%;
+  position: relative;
+}
+
+.fa {
+  position: absolute;
+  left: 45%;
+  color: #555555;
+}
+.plans button {
+  width: 100%;
+  padding: 20px 0px 5px 0px;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bottom_border {
+  border-bottom: 2px solid black;
+}
+
+/* info box is an input box */
+
+#info {
+  width: 100%;
+  height: 100px;
+  /* border: 2px solid black; */
+  padding: 20px 2% 0px 2%;
+}
+
+#forms {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+#forms > div {
+  /* flex-grow: 1; */
+  height: 100%;
+  /* border: 1px solid black; */
+  width: 40%;
+}
+
+#fill {
+  display: flex;
+  height: 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+#fill > div {
+  width: 23%;
+  height: 100%;
+}
+
+.inpt_item {
+  height: 100%;
+  width: 100%;
+}
+
+/* below is search button's div */
+
+#search_btn {
+  width: 17%;
+  margin: 50px auto;
+}
+#search_btn button {
+  width: 100%;
+  height: 100%;
+  background-color: #df346d;
+  font-size: 17px;
+  color: white;
+  border: none;
+  padding: 15px 0px;
+}
+
+.white_text {
+  color: white;
+}

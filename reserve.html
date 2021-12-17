@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ec66b54285.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+
+
+        /* navbar */
+
+        .navbar {
+            display: flex;
+            background-color: #0e112c;
+            padding: 12px 5%;
+
+        }
+
+        .left-list {
+            width: 60%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .left-list li,
+        .right-nav li {
+            list-style: none;
+
+            /* border: 1px solid black; */
+            padding: 10px 13px;
+        }
+
+        .left-list li {
+            margin-left: 5%;
+        }
+
+        .left-list li a,
+        .right-nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #0fa9f0;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        body {
+            background-color: #EEEEEE;
+
+        }
+
+        #main_container {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
+            /* height: 4000px; */
+
+        }
+
+        #first_cont {
+            width: 100%;
+            background-color: white;
+            height: 850px;
+
+        }
+
+        #first_cont #see_all_properties {
+
+            padding: 15px 0.7% 10px 0.7%;
+        }
+
+
+
+        #first_cont>a:hover {
+            text-decoration: underline;
+        }
+
+
+        #img_container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 50%);
+            /* border: 2px solid red; */
+            height: 360px;
+            gap: 3px;
+        }
+
+        #img_container div:nth-child(1) {
+            grid-area: 1/1/3/3;
+        }
+
+        /* .image_box {
+            border: 1px solid black;
+        } */
+
+        .image_box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #info_cont {
+            width: 95%;
+
+            margin: 20px auto;
+            /* height: 100px; */
+        }
+
+        #all_facilities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 130px);
+        }
+
+        .hotel_name {
+            grid-area: 1/1/1/3;
+
+        }
+
+        .map {
+            grid-area: 1/3/4/4;
+        }
+
+        /* .facility_items {
+            border: 1px solid black;
+        } */
+
+        .fa {
+
+            color: #555555;
+
+        }
+
+        .top_margin {
+            margin-top: 20px;
+        }
+
+        .margin_btwn {
+            margin: 5px 0px 5px 0px;
+        }
+
+        /* rooms container started */
+
+        .rooms_container {
+            width: 100%;
+            /* border: 1px solid green; */
+            height: 499px;
+            margin-top: 30px;
+        }
+
+        .flex_room_container {
+            width: 100%;
+            /* height: 300px; */
+            /* border: 3px solid red; */
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex_items {
+            width: 32%;
+            /* border: 1px solid green; */
+            /* height: 100%; */
+            background-color: white;
+        }
+
+        .flex_items img {
+            width: 100%;
+            height: 200px;
+        }
+
+
+        /* <!-- download orbitz app --> */
+
+        #download {
+            margin: 50px auto;
+
+            display: grid;
+            width: 90%;
+            height: 370px;
+            background-color: white;
+
+            grid-template-columns: 35% 32% 32%;
+            grid-template-rows: 370px;
+        }
+
+        #download div:nth-child(2) {
+            grid-area: 1/2/2/4;
+            padding: 4% 3%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+        }
+
+        .app_items {
+            /* border: 1px solid red; */
+            position: relative;
+        }
+
+        .download_items img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .big_font {
+            font-size: 27px;
+            font-weight: 600;
+        }
+
+        .add_margin {
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+
+        #phone {
+            width: 80%;
+            height: 50px;
+            padding: 2% 4%;
+            letter-spacing: 1px;
+            outline: none;
+        }
+
+        .mobile {
+            display: inline-block;
+            width: 45%;
+            /* padding: 10px 20px; */
+        }
+
+        #last_btn {
+            width: 70%;
+            height: 50px;
+            background-color: #df346d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .scan img {
+            width: 80%;
+            height: 150px;
+            position: absolute;
+            /* background-color: yellow; */
+        }
+
+
+
+
+
+        /* footer started */
+        a {
+            text-decoration: none;
+            color: #31b5f3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            display: flex;
+            width: 100%;
+            height: 300px;
+            padding-bottom: 20px;
+            /* border: 1px solid black; */
+            justify-content: space-between;
+            padding-right: 1%;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .footer_item li {
+            list-style: none;
+            margin-top: 10px;
+            font-size: 13px;
+
+        }
+
+        .footer_item>div {
+            font-weight: 600;
+        }
+
+        .text_center {
+            text-align: center;
+        }
+
+        .small_font {
+            font-size: 14px;
+            color: rgb(75, 74, 74);
+        }
+
+        #reserve_btn {
+            background-color: #df346d;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <ul class="left-list">
+            <div class="logo"><img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+                    alt="Logo"></div>
+            <li> <a href="">More travel</a></li>
+        </ul>
+
+
+        <ul class="right-nav">
+            <li><a href="">Espanol</a> </li>
+            <li> <a href="">List your property</a></li>
+            <li> <a href="">Support</a></li>
+            <li> <a href="">trips</a></li>
+            <li> <a href="signin.html">Sign in</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="main_container">
+        <div id="first_cont">
+            <div id="see_all_properties">
+                <a href="mumbai.html">See all Properties</a>
+            </div>
+            <div id="img_container">
+
+            </div>
+            <div id="info_cont">
+                <div id="all_facilities">
+                    <div class="facility_items hotel_name">
+                        <h1 id="hotel_nav"></h1>
+                        <div><i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h2 class="top_margin">4.8/5 Exceptional</h2>
+                        <p class="margin_btwn small_font">Guests rated this property 4.9/5 for cleanliness.</p>
+                    </div>
+                    <div class="facility_items map">
+                        <h2>Explore the area</h2>
+                        <p class="small_font">
+                            <i class="fa top_margin fa-map-marker" aria-hidden="true"></i>
+                            Gateway of India
+                        </p>
+                        <p class="small_font">
+                            <i class="fa top_margin fa-map-marker" aria-hidden="true"></i>
+                            Chhatrapati Shivaji Maharaj Museum
+                        </p>
+                        <p class="small_font">
+                            <i class="fa top_margin fa-map-marker" aria-hidden="true"></i>
+                            Bombay Castle
+                        </p>
+                        <p class="small_font">
+                            <i class="fa top_margin fa-plane" aria-hidden="true"></i>
+                            Mumbai (BOM-Chhatrapati Shivaji Intl.)
+                        </p>
+                    </div>
+                    <div class="facility_items">
+                        <h2>Popular amenities</h2>
+                        <p class="small_font margin_btwn"> <i class="fa fa-wifi" aria-hidden="true"></i>
+                            Free WiFi
+                        </p>
+                        <p class="top_margin small_font">
+                            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                            Air conditioning
+                        </p>
+                    </div>
+                    <div class="facility_items">
+
+                        <p class="top_margin small_font">
+                            Spa
+                        </p>
+                        <p class="top_margin small_font">
+                            Parking included
+                        </p>
+                        <p class="top_margin small_font">
+                            Laundry
+                        </p>
+                    </div>
+                    <div class="facility_items">
+                        <h2>
+                            Cleaning and safety practices
+                        </h2>
+                        <p class="top_margin small_font">
+                            Cleaned with disinfectant
+                        </p>
+                        <p class="top_margin small_font">
+                            72-hour vacancy between guest room stays
+                        </p>
+                    </div>
+                    <div class="facility_items">
+                        <p class="top_margin small_font">
+                            Hand sanitizer provided
+                        </p>
+                        <p class="top_margin small_font">
+                            Personal protective equipment
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="rooms_container">
+            <h1>Choose your room</h1>
+
+            <div class="flex_room_container">
+                <div class="flex_items">
+
+                </div>
+                <div class="flex_items">
+
+                </div>
+                <div class="flex_items">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- download orbitz app -->
+
+    <div id="download">
+        <div class="download_items">
+            <img src="https://thumbnails.trvl-media.com/CSYM6eB9q4W5M2gqyZNY_NfDEFQ=/a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg"
+                alt="">
+        </div>
+        <div class="download_items">
+            <div class="app_items">
+                <div class="big_font">Rewards are waiting for you in the Orbitz app</div>
+                <ul>
+                    <li class="small_font add_margin">Earn 4% back when you book your hotel in app, vs. 3% on site
+                    </li>
+                    <li class="small_font add_margin">Get flight status and gate number notifications</li>
+                    <li class="small_font add_margin">Have questions about your stay? Message your hotel right in
+                        the app</li>
+                </ul>
+
+
+                <h3 class="top_margin">Text yourself a download link</h3>
+                <div class="mobile top_margin">
+                    <input type="text" id="phone" placeholder="Phone number">
+                </div>
+                <div class="mobile top_margin">
+                    <button id="last_btn" onclick="get_app()">Get the app</button>
+                </div>
+                <p class="small_font">By providing your number, you agree to receive a one-time automated text
+                    message
+                    with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div class="app_items scan">
+                <div><img src="https://i.ibb.co/XttKbTC/70201.jpg" alt=""></div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_item">
+            <div><img
+                    src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+                    alt=""></div>
+        </div>
+        <div class="footer_item">
+            <div>Company</div>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">List your property</a></li>
+                <li><a href="">Partnerships</a></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Orbitz Rewards</a></li>
+                <li><a href="">Advertising</a></li>
+            </ul>
+
+        </div>
+        <div class="footer_item">
+            <div>Explore</div>
+            <ul>
+                <li><a href=""> Hotels in United States</a></li>
+                <li><a href=""> Vacation Rentals in United States</a></li>
+                <li><a href=""> Car Rentals in United States</a></li>
+                <li><a href="">Domestic Flights</a></li>
+                <li><a href=""> Vacation Packages in United States</a></li>
+                <li><a href="">Orbitz Reviews</a></li>
+                <li><a href="">Orbitz Coupons</a></li>
+                <li><a href="">LGBTQ Travel</a></li>
+                <li><a href="">Unique Accommodations</a></li>
+                <li><a href="">Travel Blog</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_item">
+            <div>Policies</div>
+            <ul>
+                <li><a href=""> Privacy Policy</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href=""> Orbitz Rewards Terms</a></li>
+                <li><a href=""> Do not sell my personal information</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_item">
+            <div>Help</div>
+            <ul>
+                <li><a href=""> Support</a></li>
+                <li><a href="">Cancel your hotel or vacation rental <br> booking</a></li>
+                <li><a href="">Cancel your flight</a></li>
+                <li><a href=""> Refund timelines, policies & processes</a></li>
+                <li><a href="">Use an Orbitz Coupon</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <p class="text_center top_margin small_font">© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+    </p>
+    <p class="text_center small_font">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+        trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+
+    <!-- end of main body  -->
+</body>
+
+</html>
+
+<script>
+
+    JSON.parse(localStorage.getItem("reserve_mumbai"))
+    var reserved_hotel = (JSON.parse(localStorage.getItem("reserve_mumbai")));
+
+
+
+    let room_images = [
+        reserved_hotel.img,
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/103556733.jpg?k=0f462025ae978fc3fbe623a99df33355a48bc5457bcb153605e2a2335f4185fa&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/103702964.jpg?k=c4e73cd1cbff13755b72ba8e36ba235f93691c5f4b6dbd9a8c52e3223b7026e2&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/18178036.jpg?k=b7b74bc0dbd3149f920b8253dd084ed4bf0cafdc60f937005c7aee657cba07f0&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/18181072.jpg?k=7c70d8c51210844612f431d600a4fa54b2c19f37ada4d4d67ba688327caea74e&o="
+    ]
+
+
+
+
+    let main_container = document.getElementById("main_container");
+
+    let img_container = document.getElementById("img_container")
+
+
+
+
+    //    here el refers to each image source
+    room_images.forEach(function (el) {
+        var image_box = document.createElement("div");
+
+        image_box.setAttribute("class", "image_box");
+
+        var img = document.createElement("img");
+
+        img.src = el;
+
+        img_container.append(image_box);
+
+        image_box.append(img)
+
+    })
+
+    function show_prices() {
+        let rooms_prices = document.querySelectorAll(".flex_items");
+        i = 0;
+        j = 1;
+        rooms_prices.forEach(function (el) {
+            let img = document.createElement("img");
+            img.src = reserved_hotel.rooms[i].img;
+
+            let name = document.createElement("h3");
+            name.textContent = reserved_hotel.rooms[i].room;
+            let p = document.createElement("h1");
+            p.setAttribute("class", "price")
+            p.textContent = "$" + reserved_hotel.rooms[i].price;
+            let final_price = reserved_hotel.rooms[i].price;
+
+
+
+
+            let reserve = document.createElement("button")
+
+            reserve.textContent = "Reserve"
+
+            console.log(payment);
+
+            reserve.setAttribute("id", "reserve_btn")
+
+
+            reserve.onclick = function () {
+                payment(img.src, reserved_hotel.name, name.textContent, final_price);
+                window.location.href = "payment.html"
+
+            }
+            console.log(final_price);
+
+            el.append(img)
+            el.append(name)
+            el.append(p)
+            el.append(reserve)
+            i++;
+            j++
+        })
+
+    }
+
+    show_prices();
+
+    if (localStorage.getItem("reserved rooms") == null) {
+        localStorage.setItem("reserved rooms", JSON.stringify([]))
+    }
+
+
+    function payment(img, HN, name, final_price) {
+        let reserved_room = {
+            img,
+            HN,
+            name,
+            final_price
+        }
+
+        var arr = JSON.parse(localStorage.getItem("reserved rooms"))
+        arr.push(reserved_room)
+
+        localStorage.setItem("reserved rooms", JSON.stringify(arr))
+        console.log(arr + "arr");
+
+
+
+    }
+
+    // console.log(arr);
+    console.log(reserved_hotel);
+
+
+
+
+
+
+
+
+
+    // here info_cont refers to the information related to hotel
+
+    let info_cont = document.getElementById("info_cont")
+
+
+    let hotel_name = document.getElementById("hotel_nav");
+
+    hotel_name.textContent = reserved_hotel.name;
+
+
+
+    function get_app() {
+
+        let phone = document.getElementById("phone").value;
+        if (phone.length == 10) {
+            alert("We’ve sent you a text message with a link to download the app.")
+        } else {
+            alert("Please enter a valid phone number.")
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script src="reserve.js"></script>
